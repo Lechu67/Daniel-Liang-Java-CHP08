@@ -31,6 +31,10 @@ public class Programming_Ex_06_StopWatch {
 
 
     }
+    /**
+     * Display the array, only for test
+     * @param A
+     * */
     public static void display(int [] A)
     {
         for(int i = 0 ; i < A.length ; i ++)
@@ -38,6 +42,10 @@ public class Programming_Ex_06_StopWatch {
             System.out.print(A[i] + " ");
         }
     }
+    /**
+     * Sort the array from smallest.
+     * @param A
+     * */
     public static void selectSort(int [] A)
     {
         for (int i = 0 ; i < A.length ; i++)
@@ -55,6 +63,11 @@ public class Programming_Ex_06_StopWatch {
             }
         }
     }
+    /**
+     * Generate a random filled array with ints from 0 to 999
+     * @param size
+     * @return
+     * */
     public static int[] generateArray(int size)
     {
         int [] A = new int[size];
@@ -66,23 +79,38 @@ public class Programming_Ex_06_StopWatch {
         return A;
     }
 }
+/**
+ * Class Stopwatch for measuring time from calling start() to stop()
+ * */
 class StopWatch
 {
     private long startTime;
     private long endTime;
-
+/**
+ * Constructor - when creating an instance of this class the strattime starts at the current time.
+ * */
     public StopWatch()
     {
         this.startTime = System.currentTimeMillis();
     }
+    /**
+     * Reset the start time
+     */
     public void start()
     {
         setStartTime(System.currentTimeMillis());
     }
+    /**
+     * Save the endtime
+     * */
     public void stop()
     {
         setEndTime(System.currentTimeMillis());
     }
+    /**
+     * Returns the time from start to end
+     * @return
+     * */
     public long getElapsedTime()
     {
         return getEndTime() - getStartTime();
