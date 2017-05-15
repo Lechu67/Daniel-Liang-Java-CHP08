@@ -1,10 +1,11 @@
-import java.util.Random;
+package CHP09_OBJECTS;
 
+import java.util.Random;
 /**
  * Created by Lechu on 2017-05-07.
  */
 /*
-* (Stopwatch) Design a class named StopWatch. The class contains:
+* (Stopwatch) Design a class named CHP09_OBJECTS.StopWatch. The class contains:
  ■ Private data fields startTime and endTime with getter methods.
  ■ A no-arg constructor that initializes startTime with the current time.
  ■ A method named start() that resets the startTime to the current time.
@@ -26,10 +27,6 @@ public class Programming_Ex_06_StopWatch {
         selectSort(array);
         stopWatch.stop();
         System.out.print("Sorting time in s= "+ stopWatch.getElapsedTime()*0.001);
-
-
-
-
     }
     /**
      * Display the array, only for test
@@ -115,19 +112,15 @@ class StopWatch
     {
         return getEndTime() - getStartTime();
     }
-
     public long getEndTime() {
         return endTime;
     }
-
     public long getStartTime() {
         return startTime;
     }
-
     public void setEndTime(long endTime) {
         this.endTime = endTime;
     }
-
     public void setStartTime(long startTime) {
         this.startTime = startTime;
     }
