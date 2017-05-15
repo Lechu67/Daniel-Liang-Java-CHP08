@@ -1,3 +1,5 @@
+package CHP08_2D_ARRAYS;
+
 import java.util.Scanner;
 
 /**
