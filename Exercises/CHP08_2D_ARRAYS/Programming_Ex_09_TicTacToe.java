@@ -31,7 +31,6 @@ public class Programming_Ex_09_TicTacToe {
                 setTokenPosition(setTokenPosition);
                 if (setTokenOnBoard(token, setTokenPosition,board))
                     break;
-
             }
             if (checkGameStatus(token, board))
                 displayActualBoard(board);
@@ -93,7 +92,6 @@ public class Programming_Ex_09_TicTacToe {
                     if (match9 == 9)
                         check = true;
                 }
-
             }
         }
         return check;
@@ -111,14 +109,12 @@ public class Programming_Ex_09_TicTacToe {
         {
             for (int j =  i; j <= i; j++)
             {
-
                 if (board[i][j] != token)
                     break;
                 else{
                     counter++;
                 }
             }
-
         }
         if (counter == 3) {
             System.out.println(" Diagonal(minor) win");
@@ -137,18 +133,15 @@ public class Programming_Ex_09_TicTacToe {
         int counter = 0;
         for (int i = 0; i < board.length ; i++)
         {
-
             for (int j =  i; j <= i; j++)
             {
-
                 if (board[i][j] != token)
                     break;
                 else{
                     counter++;
                 }
             }
-
-            }
+        }
         if (counter == 3) {
             System.out.println(" Diagonal(major) win");
             return true;
@@ -169,7 +162,6 @@ public class Programming_Ex_09_TicTacToe {
             int counter = 0;
             for (int j =  0; j < board[0].length; j++)
             {
-
                 if (board[i][j] != token)
                     break;
                 else{
@@ -197,7 +189,6 @@ public class Programming_Ex_09_TicTacToe {
             int counter = 0;
             for (int j =  0; j < board.length; j++)
             {
-
                 if (board[j][i] != token)
                     break;
                 else{

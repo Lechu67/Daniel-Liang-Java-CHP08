@@ -31,9 +31,7 @@ public class Programming_Ex_05 {
         display(addMatrix(Matrix_1,Matrix_2));
 
         in.close();
-
     }
-
 
     public static void display(double[][] A)
     {
@@ -46,6 +44,7 @@ public class Programming_Ex_05 {
             System.out.println();
         }
     }
+
     public static void fillArray(double[][] A)
     {
         Random random = new Random();
@@ -55,9 +54,7 @@ public class Programming_Ex_05 {
             {
                 A[i][j] = random.nextDouble();
             }
-
         }
-
     }
 
     public static double[][] addMatrix(double[][] A, double[][] B)
@@ -70,7 +67,6 @@ public class Programming_Ex_05 {
                 C[i][j] = A[i][j] + B[i][j];
             }
         }
-
         return C;
     }
 }

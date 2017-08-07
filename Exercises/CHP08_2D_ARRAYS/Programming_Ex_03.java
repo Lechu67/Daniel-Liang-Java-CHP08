@@ -32,25 +32,13 @@ public class Programming_Ex_03 {
                 if (answers[i][j] == keys[j])
                     correctCount++;
             }
-
             grades[i] = correctCount;
-//                 System.out.println("Student " + i + "'s correct count is " +
-//                         correctCount);
         }
         for (int i = 0; i < grades.length; i++) {
-            int lowest = grades[0];
-            int index = 0;
-
-            for (int j = 1; j < grades.length; j++) {
-                if (lowest > grades[j]) {
-                    lowest = grades[j];
-                    index = j;
-                }
-
-            }
-            System.out.println("Student " + (index + 1) + "scores: " + grades[index]);
+            System.out.println("Student " + (i + 1) + " scores: " + grades[i]);
         }
     }
 }
+
 
 

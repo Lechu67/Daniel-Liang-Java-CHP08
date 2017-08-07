@@ -16,9 +16,8 @@ public class Programming_Ex_04 {
         display(employeeHours, empID);
         sortHours(employeeHours, empID);
         display(employeeHours, empID);
-
-
     }
+
     public static void setID(int [] A)
     {
         for( int i = 0 ; i <A.length;i++)
@@ -26,6 +25,7 @@ public class Programming_Ex_04 {
             A[i] = i +1;
         }
     }
+
     public static void sortHours(double [][]A, int [] empID)
     {
         for( int i = 0 ; i <A.length- 1;i++)
@@ -40,10 +40,10 @@ public class Programming_Ex_04 {
                     int tmpID = empID[i];
                     empID[i] = empID[j];
                     empID[j] = tmpID;
-
                 }
             }
     }
+
     public static double getSum(double [] A)
     {
         double sum = 0;

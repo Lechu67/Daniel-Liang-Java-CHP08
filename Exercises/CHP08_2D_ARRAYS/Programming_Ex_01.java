@@ -7,17 +7,23 @@ import java.util.Random;
 public class Programming_Ex_01 {
 
     static Scanner input = new Scanner(System.in);
+
     public static void main (String[] args)
     {
-        System.out.print("Enter the row ans column");
+        System.out.print("Enter the number of rows and columns");
         int row = input.nextInt();
         int col = input.nextInt();
         int [][] sumColumnArray = new int[row][col];
         setNumbers(sumColumnArray);
         displayArray(sumColumnArray);
-        System.out.print("Sum at which index ? ");
-        int index = input.nextInt();
-        System.out.print("The sum of index "+index+" is: "+ sumColumn(sumColumnArray,index));
+        System.out.print("Give index of the column to sum ? ");
+        try {
+            int index = input.nextInt();
+            System.out.print("The sum of column " + index + " is: " + sumColumn(sumColumnArray, index));
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Index is out of range.");
+        }
         input.close();
     }
     /**
@@ -55,8 +61,7 @@ public class Programming_Ex_01 {
     public static int sumColumn(int [][] m, int columnIndex)
     {
         int sum = 0;
-        for (int i = 0; i < m.length ; i++)
-        {
+        for (int i = 0; i < m.length ; i++){
             sum += m[i][columnIndex];
         }
         return sum;
